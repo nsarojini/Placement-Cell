@@ -1,0 +1,19 @@
+{
+  "name": "placement-cell-project",
+  "version": "1.0.0",
+  "description": "Placement Cell",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Placement",
+    "Website"
+  ],
+  "author": "N Sarojini",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
