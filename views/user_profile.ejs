@@ -1,10 +1,15 @@
+<link rel="stylesheet" href="../css/loginpage.css">
+
 <% if(user.id==profile_user.id) {%>
 
-  <div class="container mt-4 col-md-4">
+  <div class="container mt-4 col-md-6">
+    <div class="intro">
+      <div class="card gradient-custom" style="border-radius: 1rem;">
+        <form action="/update" method="POST" class="mt-2 p-3" style="--bs-border-opacity: 0.5">
     <h3 class="py-2">Update profile</h3>
-    <form action="/update" method="POST" class="mt-2 border border-dark rounded p-3" style="--bs-border-opacity: 0.5">
+
       <div class="mb-3">
-        <label for="username" class="form-label">username</label>
+        <label for="username" class="form-label">Username</label>
         <input type="text" class="form-control" id="username" name="username" value="<%= profile_user.username %>"
           required />
       </div>
@@ -19,7 +24,10 @@
           placeholder="Enter confirm password" required />
       </div>
 
-      <button type="submit" class="btn btn-primary">Update</button>
+     <div class="text-center py-2">
+        <button class="btn btn-light btn-lg btn-rounded px-4" type="submit">Update</button>
+      </div>
+      
     </form>
   </div>
 
