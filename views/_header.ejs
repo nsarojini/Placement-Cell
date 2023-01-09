@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="../css/style.css">
+
+<header>
+  <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-4" href="/dashboard">
+          Placement Cell</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-around " id="navbarSupportedContent">
+          <% if (locals.user) {%>
+            <ul class="nav">
+
+              <li class="nav-item mx-4">
+                <a class="navbar-brand" href="/dashboard">Home</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="navbar-brand" aria-current="page" href="/student/add-student">Manage Student</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="navbar-brand" href="/interview/add-interview">Manage Interview</a>
+              </li>
+
+            </ul>
+            <form>
+              <a class="navbar-brand p-1" href="/download"><i class="fa fa-download"
+                  style="font-size:24px;color:rgb(22, 21, 21)"></i>
+              </a>
+              <a class="btn btn-dark mx-1" href="/profile">
+                <i class="fa-regular fa-user"></i>
+                <%= user.username %>
+              </a>
+              <a class="btn btn-dark mx-1" href="/sign-out">Sign Out</a>
+            </form>
+            <%} %>
+        </div>
+      </div>
+  </div>
+  </nav>
+</header>

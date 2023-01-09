@@ -1,0 +1,14 @@
+* {
+	margin: 0;
+	padding: 0%;
+	box-sizing: border-box;
+}
+
+.header {
+	width: 100%;
+	background-image: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
+}
+
+navbar-brand:hover {
+	color: white !important;
+}

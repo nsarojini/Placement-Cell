@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="../css/usersignup.css">
+<div class="container mt-4 col-md-4">
+  <div class="intro">
+    <div class="card gradient-custom" style="border-radius: 1rem;">
+      <div class="row justify-content-center">
+        <div class="card-body p-4 text-black">
+          <div class="my-md-3">
+
+            <h2>Sign Up</h2>
+            <br>
+            <form method="POST" action="/create-session" style="--bs-border-opacity: 0.5">
+
+              <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email"
+                  required />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required />
+              </div>
+              <div class="mb-3">
+                <label for="confirm_password" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm_password" name="confirm_password" required />
+              </div>
+              <div class="text-center py-5">
+                <button class="btn btn-light btn-lg btn-rounded px-5" type="submit">Sign Up</button>
+              </div>
+            </form>
+
+            <p class="mt-2"><a href="/">Already have an account?</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
