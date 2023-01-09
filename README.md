@@ -25,11 +25,11 @@ This web application is built using NodeJs EJS, MongoDB, ExpressJs, NodeJs and P
 
 Libraries Used:
 
-bcryptjs
-connect-flash
-connect-mongo
-cookie-parser
-dotenv
-passport
-passport-jwt
-passport-local
+bcryptjs,
+connect-flash,
+connect-mongo,
+cookie-parser,
+dotenv,
+passport,
+passport-jwt,
+passport-local.
