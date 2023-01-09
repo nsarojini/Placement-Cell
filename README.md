@@ -5,7 +5,7 @@ This placement cell web application  created for employees to manage interviews 
 This placement cell to keeps records of students and schedule interviews with different companies. 
 
 
-This web application is built using NodeJs EJS, MongoDB, ExpressJs, NodeJs and PassportJS
+This web application is built using Node.Js, EJS, MongoDB, ExpressJs.
 
 
 
