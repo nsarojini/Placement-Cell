@@ -31,5 +31,4 @@ connect-mongo,
 cookie-parser,
 dotenv,
 passport,
-passport-jwt,
 passport-local.
